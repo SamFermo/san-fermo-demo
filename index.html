@@ -655,6 +655,7 @@ window.DEMO_SEED = {
         }
     },
     inputs: {
+        gpb: 4,
         food: [ {
             name: "Sea Wolf Bakery Baguette",
             price: 8
@@ -722,132 +723,228 @@ window.DEMO_SEED = {
         } ],
         wines: [ {
             name: 'House Prosecco: Bellenda "San Fermo"',
+            key: "san-fermo-prosecco-house",
             glass: 13,
-            bottle: 50
+            bottle: 50,
+            gbtn: "GL House Prosecco",
+            bbtn: "House Prosecco Btl."
         }, {
             name: "House White: Brigaldara Soave DOC 2023 (pouring Borgo PG until gone)",
+            key: "le-vaglie-verdicchio-house-white",
             glass: 13,
-            bottle: 50
+            bottle: 50,
+            gbtn: "GL House White",
+            bbtn: "House White Btl."
         }, {
             name: "Vigna del Lauro Sauvignon Blanc, Collio 2024",
+            key: "vigna-del-lauro-sauvignon-blanc-collio-2024",
             glass: 16,
-            bottle: 65
+            bottle: 65,
+            gbtn: "GL Sauvignon Blanc",
+            bbtn: "Sauvignon Blanc Btl."
         }, {
             name: "Contesa Pecorino 2023",
+            key: "contesa-pecorino",
             glass: 18,
-            bottle: 75
+            bottle: 75,
+            gbtn: "GL Pecorino",
+            bbtn: "Pecorino Btl."
         }, {
             name: 'Borgo Savaian Masaret "Skins are Kings" Orange NV',
+            key: "borgo-savaian-skins-are-kings",
             glass: 14,
-            bottle: 55
+            bottle: 55,
+            gbtn: "GL Orange",
+            bbtn: "Orange Btl"
         }, {
             name: 'La Spinetta "Il Rosé di Casanova" 2025',
+            key: "la-spinetta-il-rose-di-casanova-2025",
             glass: 16,
-            bottle: 65
+            bottle: 65,
+            gbtn: "GL Rose",
+            bbtn: "Rose Btl."
         }, {
             name: "Brigaldara Valpolicella 2024",
+            key: "brigaldara-valpolicella-2024",
             glass: 15,
-            bottle: 60
+            bottle: 60,
+            gbtn: "GL Valpolicella",
+            bbtn: "Brigaldara Btl."
         }, {
             name: 'House Red: Corsini "Matot" Langhe Rosso',
+            key: "podere-ruggeri-corsini-matot-langhe-rosso-house-",
             glass: 13,
-            bottle: 50
+            bottle: 50,
+            gbtn: "GL House Red",
+            bbtn: "House Red Btl."
         }, {
             name: 'La Valentina "Spelt" Montepulciano d\'Abruzzo Riserva 2021',
+            key: "la-valentina-spelt-montepulciano-d-abruzzo-riser",
             glass: 15,
-            bottle: 60
+            bottle: 60,
+            gbtn: "GL Spelt",
+            bbtn: "Spelt Btl."
         }, {
             name: "Corte Pavone Rosso di Montalcino 2023",
+            key: "corte-pavone-rosso-di-montalcino-2023",
             glass: 19,
-            bottle: 80
+            bottle: 80,
+            gbtn: "GL Corte Pavone",
+            bbtn: "Corte Pavone Btl."
         }, {
             name: "Albino Rocca Langhe Nebbiolo",
+            key: "albino-rocca-langhe-nebbiolo",
             glass: 17,
-            bottle: 70
+            bottle: 70,
+            gbtn: "GL Nebbiolo",
+            bbtn: "Nebbiolo Btl."
         }, {
             name: "Louis Armand Premier Cru Champagne",
+            key: "louis-armand-premier-cru-champagne",
             glass: 25,
-            bottle: 100
+            bottle: 100,
+            gbtn: "GL Champagne",
+            bbtn: "Louis Armand Btl."
         }, {
             name: "Laurent Perrier Champagne",
+            key: "laurent-perrier-champagne",
             glass: null,
-            bottle: 125
+            bottle: 125,
+            gbtn: null,
+            bbtn: "Laurent Perrier Btl."
         }, {
             name: "Angelo Negro Unfiltered Arneis 2024",
+            key: "angelo-negro-unfiltered-arneis-2024",
             glass: 15,
-            bottle: 60
+            bottle: 60,
+            gbtn: "GL Angelo Negro",
+            bbtn: "Angelo Negro Btl."
         }, {
             name: "Rocca del Principe Fiano di Avellino 2025",
+            key: "rocca-del-principe-fiano-di-avellino",
             glass: 17,
-            bottle: 70
+            bottle: 70,
+            gbtn: "GL Fiano",
+            bbtn: "Fiano Btl."
         }, {
             name: "Terre Nere Etna Bianco 2024",
+            key: "terre-nere-etna-bianco",
             glass: null,
-            bottle: 85
+            bottle: 85,
+            gbtn: null,
+            bbtn: "Terre Nere Etna Bianco Btl."
         }, {
             name: "Copertino Riserva Negroamaro 2017",
+            key: "copertino-riserva-negroamaro-2016",
             glass: 14,
-            bottle: 55
+            bottle: 55,
+            gbtn: "GL Copertino",
+            bbtn: "Copertino Btl."
         }, {
             name: 'Podere Ruggeri Corsini "Armujan" Barbera d\'Alba Superiore 2022',
+            key: "podere-ruggeri-corsini-armujan-barbera-d-alba-su",
             glass: null,
-            bottle: 80
+            bottle: 80,
+            gbtn: null,
+            bbtn: "Corsini Armujan Barbera Btl."
         }, {
             name: 'Felsina "Berardenga" Chianti Classico 2022',
+            key: "felsina-berardenga-chianti-classico-2022",
             glass: null,
-            bottle: 90
+            bottle: 90,
+            gbtn: null,
+            bbtn: null
         }, {
             name: 'Terre Nere "Bellacolonna" Etna Rosso 2022',
+            key: "terre-nere-bellacolonna-etna-rosso-2022",
             glass: null,
-            bottle: 100
+            bottle: 100,
+            gbtn: null,
+            bbtn: "Terre Nere Bellacolona Etna Rosso Btl."
         }, {
             name: 'Piaggia "Il Sasso" Carmignano 2022',
+            key: "piaggia-il-sasso-carmignano",
             glass: null,
-            bottle: 100
+            bottle: 100,
+            gbtn: null,
+            bbtn: "Il Sasso Carmignano Btl."
         }, {
             name: 'Franco Molino "Cascina Rocca" Barolo 2019',
+            key: "franco-molino-cascina-rocca-barolo-2019",
             glass: null,
-            bottle: 95
+            bottle: 95,
+            gbtn: null,
+            bbtn: "Franco Molino Barolo Btl."
         }, {
             name: "Castello di Neive Barbaresco 2023",
+            key: "castello-di-neive-barbaresco-santo-stefano-2022",
             glass: null,
-            bottle: 135
+            bottle: 135,
+            gbtn: null,
+            bbtn: "Castello Di Neive Barbaresco Btl."
         }, {
             name: "Voliero Brunello di Montalcino 2017",
+            key: "voliero-brunello-di-montalcino-2017",
             glass: null,
-            bottle: 145
+            bottle: 145,
+            gbtn: null,
+            bbtn: "Voliero Brunello Btl."
         }, {
             name: 'Claudio Plessi "Muntanera" Rosato 2024',
+            key: "claudio-plessi-muntanera-rosato",
             glass: null,
-            bottle: 70
+            bottle: 70,
+            gbtn: null,
+            bbtn: "Muntanera Plessi Rosato Btl."
         }, {
             name: 'Paltrinieri "Sant\'Agata" Lambrusco di Sorbara 2024',
+            key: "paltrinieri-sant-agata-lambrusco-di-sorbara",
             glass: 15,
-            bottle: 55
+            bottle: 55,
+            gbtn: "GL Lambrusco",
+            bbtn: "Lambrusco Btl."
         }, {
             name: 'Viberti "Derthona" Timorasso 2023',
+            key: "viberti-derthona-timorasso-2023",
             glass: null,
-            bottle: 95
+            bottle: 95,
+            gbtn: null,
+            bbtn: "Viberti Timorasso Btl."
         }, {
             name: 'Terlan "Terlaner I" Primo Grande Cuvée 2021',
+            key: "terlan-terlaner-i-primo-grande-cuvee-2021",
             glass: null,
-            bottle: 340
+            bottle: 340,
+            gbtn: null,
+            bbtn: "Terlano I Primo Grand Cuvee Btl."
         }, {
             name: 'Cocito "Baluchin" Barbaresco Riserva 2017',
+            key: "cocito-baluchin-barbaresco-riserva-2017",
             glass: null,
-            bottle: 165
+            bottle: 165,
+            gbtn: null,
+            bbtn: null
         }, {
             name: 'Cantina Terlano "Porphyr" Lagrein Riserva 2021',
+            key: "cantina-terlano-porphyr-lagrein-riserva-2021",
             glass: null,
-            bottle: 190
+            bottle: 190,
+            gbtn: null,
+            bbtn: "Terlano Porphyr Lagrein Btl."
         }, {
             name: "Tenuta Santa Maria Amarone Classico Riserva 2018",
+            key: "tenuta-santa-maria-amarone-classico-riserva-2018",
             glass: null,
-            bottle: 200
+            bottle: 200,
+            gbtn: null,
+            bbtn: "Tenuta Santa Maria Amarone Btl."
         }, {
             name: 'Viberti "San Pietro" Barolo Riserva 2018',
+            key: "viberti-san-pietro-barolo-riserva-2018",
             glass: null,
-            bottle: 250
+            bottle: 250,
+            gbtn: null,
+            bbtn: "Viberti Barolo Btl."
         } ]
     }
 };</script>
@@ -968,9 +1065,11 @@ window.DEMO_SEED = {
         var bi = [], gi = [], wr = 0, bt = 0, gl = 0;
         I.wines.forEach((function(w) {
             var q = w.glass ? Math.round(covers * w.gshare * U(.7, 1.3)) : 0, q2 = w.bottle ? Math.round(covers * w.bshare * U(.6, 1.4)) : 0;
+            if (!w.gbtn) q = 0;
+            if (!w.bbtn) q2 = 0;
             if (q) {
                 gi.push({
-                    name: w.name,
+                    name: w.gbtn,
                     qty: q,
                     rev: q * w.glass
                 });
@@ -979,7 +1078,7 @@ window.DEMO_SEED = {
             }
             if (q2) {
                 bi.push({
-                    name: w.name,
+                    name: w.bbtn,
                     qty: q2,
                     rev: q2 * w.bottle
                 });
@@ -1165,6 +1264,61 @@ window.DEMO_SEED = {
         x.setHours(h, m || 0, 0, 0);
         return x.getTime();
     }
+    (function() {
+        var cAt = addD(today, -14);
+        cAt.setHours(11, 0, 0, 0);
+        var q = {}, sold = {}, from = iso(addD(today, -14)), gpb = I.gpb || 4;
+        Object.keys(S).forEach((function(k) {
+            if (k.indexOf("revel/") !== 0 || k.slice(6) < from) return;
+            var w = (S[k].drinks || {}).wine || {};
+            (w.glass_items || []).forEach((function(it) {
+                sold[it.name] = (sold[it.name] || 0) + it.qty / gpb;
+            }));
+            (w.bottle_items || []).forEach((function(it) {
+                sold[it.name] = (sold[it.name] || 0) + it.qty;
+            }));
+        }));
+        I.wines.forEach((function(w, i) {
+            var used = (w.gbtn ? sold[w.gbtn] || 0 : 0) + (w.bbtn ? sold[w.bbtn] || 0 : 0);
+            q[w.key] = Math.ceil(used) + 3 + i * 7 % 18;
+        }));
+        var rAt = addD(today, -5);
+        rAt.setHours(14, 30, 0, 0);
+        S["board/wineinv"] = {
+            counts: [ {
+                id: "demo-count-1",
+                at: cAt.getTime(),
+                by: "Lena Marsh",
+                when: "before",
+                svc: iso(addD(today, -14)),
+                q
+            } ],
+            receipts: I.wines.slice(0, 4).map((function(w, i) {
+                return {
+                    id: "demo-rcpt-" + i,
+                    at: rAt.getTime() + i * 6e4,
+                    by: "Lena Marsh",
+                    key: w.key,
+                    qty: 12,
+                    note: "Delivery"
+                };
+            }))
+        };
+    })();
+    (function() {
+        var set = {}, t = addD(today, -4).getTime();
+        I.wines.forEach((function(w) {
+            set[w.key] = {
+                n: 0,
+                at: t,
+                by: "Lena Marsh"
+            };
+        }));
+        S["board/winerevel"] = {
+            set,
+            updated: iso(addD(today, -4))
+        };
+    })();
     S["board/winebook"] = {
         inventory: "null",
         sales: "null",
@@ -6284,7 +6438,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "", "", "", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "1-close", "" ]
             }, {
                 name: "Ray",
@@ -6334,7 +6488,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "1-close", "1-close", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "1-close", "" ]
             }, {
                 name: "Ray",
@@ -6384,7 +6538,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "1-close", "1-close", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "1-close", "" ]
             }, {
                 name: "Ray",
@@ -6434,7 +6588,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "1-close", "1-close", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "1-close", "" ]
             }, {
                 name: "Ray",
@@ -6484,7 +6638,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "1-close", "1-close", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "11-9", "", "" ]
             }, {
                 name: "Ray",
@@ -6534,7 +6688,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "11-9", "11-9", "" ]
             }, {
                 name: "Ray",
@@ -6584,7 +6738,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "1-close", "1-close", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -6634,7 +6788,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "1-close", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "1-close", "" ]
             }, {
                 name: "Ray",
@@ -6684,7 +6838,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "R/O" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "1-close", "" ]
             }, {
                 name: "Ray",
@@ -6734,7 +6888,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "R/O", "R/O", "R/O", "R/O", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -6787,7 +6941,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-5", "", "", "9-5", "9-5", "9-5", "9-5" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -6840,7 +6994,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-5", "9-5", "", "", "9-5", "9-5", "9-5" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -6893,7 +7047,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "1-close", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -6946,7 +7100,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "1-close", "R/O", "R/O", "R/O", "R/O", "R/O", "R/O" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -6999,7 +7153,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "R/O", "R/O", "R/O", "R/O", "R/O", "R/O", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -7052,7 +7206,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Ray",
@@ -7102,7 +7256,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "R/O", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Hazel",
@@ -7155,7 +7309,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Hazel",
@@ -7208,7 +7362,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "1-close", "" ]
             }, {
                 name: "Hazel",
@@ -7261,7 +7415,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Hazel",
@@ -7314,7 +7468,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Hazel",
@@ -7367,7 +7521,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "9-7", "", "", "" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "1-close", "" ]
             }, {
                 name: "Hazel",
@@ -7420,7 +7574,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "12-10", "12-10", "" ]
             }, {
                 name: "Hazel",
@@ -7473,7 +7627,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "R/O", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "10-8", "" ]
             }, {
                 name: "Hazel",
@@ -7526,7 +7680,7 @@ window.SF = {
                 name: "Daniel",
                 shifts: [ "9-7", "9-7", "", "", "", "", "" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "10-8", "" ]
             }, {
                 name: "Hazel",
@@ -7576,7 +7730,7 @@ window.SF = {
                 name: "Kyle",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "", "1-close", "1-close", "" ]
             }, {
                 name: "Hazel",
@@ -7626,7 +7780,7 @@ window.SF = {
                 name: "Kyle",
                 shifts: [ "9-7", "9-7", "9-7", "", "", "", "9-7" ]
             }, {
-                name: "Rafa",
+                name: "Rafael",
                 shifts: [ "", "", "1-close", "1-close", "1-close", "10-8", "" ]
             }, {
                 name: "Hazel",
@@ -8861,6 +9015,36 @@ window.SF = {
                     usd: 100,
                     cases: null
                 }
+            },
+            "Distributor J": {
+                cutoffDow: 2,
+                cutoffTime: "22:00",
+                deliveryDow: 3,
+                confirmed: true,
+                minimum: {
+                    usd: 100,
+                    cases: null
+                }
+            },
+            "Distributor K": {
+                cutoffDow: 3,
+                cutoffTime: "22:00",
+                deliveryDow: 4,
+                confirmed: true,
+                minimum: {
+                    usd: 100,
+                    cases: null
+                }
+            },
+            "Distributor L": {
+                cutoffDow: 4,
+                cutoffTime: "22:00",
+                deliveryDow: 5,
+                confirmed: true,
+                minimum: {
+                    usd: 100,
+                    cases: null
+                }
             }
         },
         wines: [ {
@@ -8869,7 +9053,7 @@ window.SF = {
             short: "House Prosecco",
             type: "Sparkling",
             status: "core-glass",
-            vendor: "Distributor E",
+            vendor: "Distributor G",
             unit: 12,
             cost: 15.38,
             glass: 13,
@@ -8879,7 +9063,7 @@ window.SF = {
             name: 'Le Origini "Passanello" Lambrusco Grasparossa 2024',
             type: "Sparkling",
             status: "cellar",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             glass: 14,
             bottle: 55
         }, {
@@ -8888,7 +9072,7 @@ window.SF = {
             short: "Soave",
             type: "White",
             status: "core-glass",
-            vendor: "Distributor H",
+            vendor: "Distributor J",
             unit: 12,
             cost: 9.93,
             glass: 13,
@@ -8899,7 +9083,7 @@ window.SF = {
             short: "Vigna del Lauro Sauv Blanc",
             type: "White",
             status: "core-glass",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             unit: 12,
             cost: 16.36,
             glass: 16,
@@ -8916,7 +9100,7 @@ window.SF = {
             short: "Pecorino",
             type: "White",
             status: "core-glass",
-            vendor: "Distributor H",
+            vendor: "Distributor J",
             unit: 12,
             cost: 10.81,
             glass: 18,
@@ -8926,7 +9110,7 @@ window.SF = {
             name: 'Valle dell\'Acate "Thymbra" Vermentino 2023',
             type: "White",
             status: "cellar",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             glass: 18,
             bottle: 75
         }, {
@@ -8935,7 +9119,7 @@ window.SF = {
             short: "Borgo Savaian Orange",
             type: "Orange",
             status: "core-glass",
-            vendor: "Distributor G",
+            vendor: "Distributor I",
             unit: 6,
             cost: 13.81,
             glass: 14,
@@ -8946,7 +9130,7 @@ window.SF = {
             short: "La Spinetta Rosé",
             type: "Rosé",
             status: "core-glass",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             unit: 12,
             cost: 15.72,
             glass: 16,
@@ -8957,7 +9141,7 @@ window.SF = {
             short: "Valpolicella",
             type: "Red",
             status: "core-glass",
-            vendor: "Distributor H",
+            vendor: "Distributor J",
             unit: 12,
             cost: 10.05,
             glass: 15,
@@ -8967,7 +9151,7 @@ window.SF = {
             name: "Corte Scaletta Valpolicella 2022",
             type: "Red",
             status: "cellar",
-            vendor: "Distributor G",
+            vendor: "Distributor I",
             glass: 15,
             bottle: 60
         }, {
@@ -8987,7 +9171,7 @@ window.SF = {
             short: "Spelt",
             type: "Red",
             status: "core-glass",
-            vendor: "Distributor I",
+            vendor: "Distributor L",
             unit: 12,
             cost: 15.36,
             glass: 15,
@@ -8998,7 +9182,7 @@ window.SF = {
             short: "Corte Pavone",
             type: "Red",
             status: "core-glass",
-            vendor: "Distributor E",
+            vendor: "Distributor G",
             unit: 12,
             cost: 23.12,
             glass: 19,
@@ -9018,7 +9202,7 @@ window.SF = {
             short: "Albino Rocca Nebbiolo",
             type: "Red",
             status: "core-glass",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             unit: 12,
             cost: 19.73,
             glass: 17,
@@ -9029,7 +9213,7 @@ window.SF = {
             short: "Louis Armand",
             type: "Sparkling",
             status: "core-glass",
-            vendor: "Distributor G",
+            vendor: "Distributor I",
             unit: 6,
             cost: 25.56,
             glass: 25,
@@ -9040,7 +9224,7 @@ window.SF = {
             short: "Laurent Perrier",
             type: "Sparkling",
             status: "core-bottle",
-            vendor: "Distributor I",
+            vendor: "Distributor L",
             unit: 6,
             cost: 34.57,
             bottle: 125
@@ -9050,7 +9234,7 @@ window.SF = {
             short: "Angelo Negro Arneis",
             type: "White",
             status: "core-glass",
-            vendor: "Distributor F",
+            vendor: "Distributor H",
             unit: 12,
             cost: 14.54,
             glass: 15,
@@ -9061,7 +9245,7 @@ window.SF = {
             short: "Fiano",
             type: "White",
             status: "core-glass",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             unit: 12,
             cost: 16.91,
             glass: 17,
@@ -9072,7 +9256,7 @@ window.SF = {
             short: "Terre Nere Bianco",
             type: "White",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             unit: 12,
             cost: 26.93,
             bottle: 85
@@ -9082,7 +9266,7 @@ window.SF = {
             short: "Copertino",
             type: "Red",
             status: "core-glass",
-            vendor: "Distributor F",
+            vendor: "Distributor H",
             unit: 12,
             cost: 10.61,
             glass: 14,
@@ -9104,7 +9288,7 @@ window.SF = {
             short: "Felsina Chianti",
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             fridge: true,
             unit: 12,
             cost: 19.05,
@@ -9115,7 +9299,7 @@ window.SF = {
             short: "Bellacolonna",
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             fridge: true,
             unit: 12,
             cost: 23.85,
@@ -9126,7 +9310,7 @@ window.SF = {
             short: "Il Sasso",
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             fridge: true,
             unit: 12,
             cost: 23.75,
@@ -9137,7 +9321,7 @@ window.SF = {
             short: "Franco Molino Barolo",
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor C",
+            vendor: "Distributor D",
             unit: 12,
             cost: 20.99,
             bottle: 95
@@ -9147,7 +9331,7 @@ window.SF = {
             short: "Castello di Neive",
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor I",
+            vendor: "Distributor L",
             fridge: true,
             unit: 12,
             cost: 30.68,
@@ -9158,7 +9342,7 @@ window.SF = {
             short: "Voliero Brunello",
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             fridge: true,
             unit: 12,
             cost: 51.06,
@@ -9176,7 +9360,7 @@ window.SF = {
             name: 'Il Ceo "Vespri" Pet Nat',
             type: "Sparkling",
             status: "cellar",
-            vendor: "Walden Selections",
+            vendor: "Distributor K",
             bottle: 70
         }, {
             key: "pojer-e-sandri-zero-infinito-pet-nat",
@@ -9190,7 +9374,7 @@ window.SF = {
             name: 'Claudio Plessi "Muntanera" Rosato 2024',
             type: "Sparkling",
             status: "core-bottle",
-            vendor: "Distributor D",
+            vendor: "Distributor E",
             phaseOut: true,
             bottle: 70
         }, {
@@ -9199,7 +9383,7 @@ window.SF = {
             short: "Sant'Agata Lambrusco",
             type: "Sparkling",
             status: "core-glass",
-            vendor: "Distributor D",
+            vendor: "Distributor E",
             unit: 12,
             cost: 16.48,
             glass: 15,
@@ -9209,13 +9393,13 @@ window.SF = {
             name: 'Folicello "Il Rosso" Lambrusco dell\'Emilia',
             type: "Sparkling",
             status: "cellar",
-            vendor: "Walden Selections"
+            vendor: "Distributor K"
         }, {
             key: "apres-sol-brut-rose",
             name: "Apres Sol Brut Rosé",
             type: "Sparkling",
             status: "cellar",
-            vendor: "Distributor C",
+            vendor: "Distributor D",
             glass: 16,
             bottle: 65
         }, {
@@ -9223,7 +9407,7 @@ window.SF = {
             name: "Pietramore Trebbiano d'Abruzzo Superiore 2021",
             type: "White",
             status: "cellar",
-            vendor: "Distributor G",
+            vendor: "Distributor I",
             glass: 15,
             bottle: 60
         }, {
@@ -9237,21 +9421,21 @@ window.SF = {
             name: 'I Pentri "Flora" Falanghina 2021',
             type: "White",
             status: "cellar",
-            vendor: "Distributor H",
+            vendor: "Distributor J",
             bottle: 80
         }, {
             key: "l-archetipo-greco-bianco-2024",
             name: "L'Archetipo Greco Bianco 2024",
             type: "White",
             status: "cellar",
-            vendor: "Distributor G",
+            vendor: "Distributor I",
             bottle: 60
         }, {
             key: "schiopetto-sauvignon-blanc-collio",
             name: "Schiopetto Sauvignon Blanc, Collio",
             type: "White",
             status: "cellar",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             bottle: 75
         }, {
             key: "viberti-derthona-timorasso-2023",
@@ -9266,21 +9450,21 @@ window.SF = {
             name: "Scarpa Monferrato Bianco (Timorasso) 2020",
             type: "White",
             status: "cellar",
-            vendor: "Cru Selections",
+            vendor: "Distributor B",
             bottle: 100
         }, {
             key: "fontodi-meriggio-bianco-2022",
             name: 'Fontodi "Meriggio" Bianco 2022',
             type: "White",
             status: "cellar",
-            vendor: "Distributor H",
+            vendor: "Distributor J",
             bottle: 110
         }, {
             key: "terlan-terlaner-i-primo-grande-cuvee-2021",
             name: 'Terlan "Terlaner I" Primo Grande Cuvée 2021',
             type: "White",
             status: "core-bottle",
-            vendor: "Distributor F",
+            vendor: "Distributor H",
             phaseOut: true,
             bottle: 340
         }, {
@@ -9294,14 +9478,14 @@ window.SF = {
             name: 'Ruth Lewandowski "Tatto" Orange 2022',
             type: "Orange",
             status: "cellar",
-            vendor: "Walden Selections",
+            vendor: "Distributor K",
             bottle: 70
         }, {
             key: "le-vigne-di-faraone-cerasuolo-d-abruzzo-2024",
             name: "Le Vigne di Faraone Cerasuolo d'Abruzzo 2024",
             type: "Rosé",
             status: "cellar",
-            vendor: "Distributor G",
+            vendor: "Distributor I",
             glass: 15,
             bottle: 60
         }, {
@@ -9309,7 +9493,7 @@ window.SF = {
             name: 'Boffalora "Umo" Chiavennasca 2021',
             type: "Red",
             status: "cellar",
-            vendor: "Distributor D",
+            vendor: "Distributor E",
             glass: 20,
             bottle: 85
         }, {
@@ -9317,28 +9501,28 @@ window.SF = {
             name: 'I Pentri "Kerres" Piedirosso 2016',
             type: "Red",
             status: "cellar",
-            vendor: "Distributor H",
+            vendor: "Distributor J",
             bottle: 85
         }, {
             key: "la-miraja-ruche-di-castagnole-monferrato-2023",
             name: "La Miraja Ruché di Castagnole Monferrato 2023",
             type: "Red",
             status: "cellar",
-            vendor: "Distributor F",
+            vendor: "Distributor H",
             bottle: 90
         }, {
             key: "uccelliera-rapace-2019",
             name: 'Uccelliera "Rapace" 2019',
             type: "Red",
             status: "cellar",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             bottle: 95
         }, {
             key: "scarpa-verduno-pelaverga-2022",
             name: "Scarpa Verduno Pelaverga 2022",
             type: "Red",
             status: "cellar",
-            vendor: "Cru Selections",
+            vendor: "Distributor B",
             bottle: 110
         }, {
             key: "zenato-cresasso-corvina-2015",
@@ -9352,7 +9536,7 @@ window.SF = {
             name: 'Cocito "Baluchin" Barbaresco Riserva 2017',
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             phaseOut: true,
             fridge: true,
             bottle: 165
@@ -9361,7 +9545,7 @@ window.SF = {
             name: 'Cantina Terlano "Porphyr" Lagrein Riserva 2021',
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor F",
+            vendor: "Distributor H",
             phaseOut: true,
             fridge: true,
             bottle: 190
@@ -9370,14 +9554,14 @@ window.SF = {
             name: 'Arpepe "Sassella Rocce Rosse" Riserva',
             type: "Red",
             status: "cellar",
-            vendor: "Walden Selections",
+            vendor: "Distributor K",
             bottle: 200
         }, {
             key: "tenuta-santa-maria-amarone-classico-riserva-2018",
             name: "Tenuta Santa Maria Amarone Classico Riserva 2018",
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             phaseOut: true,
             fridge: true,
             bottle: 200
@@ -9393,19 +9577,19 @@ window.SF = {
             name: "Ciacci Piccolomini Brunello di Montalcino 2019",
             type: "Red",
             status: "cellar",
-            vendor: "Distributor B"
+            vendor: "Distributor C"
         }, {
             key: "la-gerla-brunello-di-montalcino-2018",
             name: "La Gerla Brunello di Montalcino 2018",
             type: "Red",
             status: "cellar",
-            vendor: "Cru Selections"
+            vendor: "Distributor B"
         }, {
             key: "viberti-san-pietro-barolo-riserva-2018",
             name: 'Viberti "San Pietro" Barolo Riserva 2018',
             type: "Red",
             status: "core-bottle",
-            vendor: "Distributor B",
+            vendor: "Distributor C",
             phaseOut: true,
             fridge: true,
             bottle: 250
@@ -9414,14 +9598,14 @@ window.SF = {
             name: 'Vietti Barolo "Ravera" 2020',
             type: "Red",
             status: "cellar",
-            vendor: "Distributor I",
+            vendor: "Distributor L",
             bottle: 275
         }, {
             key: "antinori-tignanello-2021",
             name: 'Antinori "Tignanello" 2021',
             type: "Red",
             status: "cellar",
-            vendor: "Southern Glazer's",
+            vendor: "Distributor F",
             bottle: 300
         }, {
             key: "vandori-bubbles",
@@ -9429,7 +9613,7 @@ window.SF = {
             short: "Vandori Prosecco",
             type: "Sparkling",
             status: "cellar",
-            vendor: "Distributor C",
+            vendor: "Distributor D",
             unit: 12,
             cost: 5.81
         }, {
@@ -9579,125 +9763,125 @@ window.SF = {
     },
     dishCosts: {
         generated: "2026-10-16",
-        basis: "Plate cost estimates per dish.",
+        basis: "Plate cost estimates per dish (sample figures).",
         target_pct: .25,
         items: [ {
             name: "Sea Wolf Bakery Baguette",
-            plate_cost: 2.98,
+            plate_cost: 2.81,
             menu_price: 8,
             aliases: [ "Baguette" ],
             special: false
         }, {
             name: "Castelvetrano Olives",
-            plate_cost: 2.75,
+            plate_cost: 2.71,
             menu_price: 6,
             aliases: [ "Olives" ],
             special: false
         }, {
             name: "Marcona Almonds",
-            plate_cost: 3.5,
+            plate_cost: 4.06,
             menu_price: 6,
             aliases: [ "Almonds" ],
             special: false
         }, {
             name: "Farinata",
-            plate_cost: 2.41,
+            plate_cost: 2.24,
             menu_price: 13,
             aliases: [],
             special: false
         }, {
             name: "House Caesar",
-            plate_cost: 3.48,
+            plate_cost: 3.22,
             menu_price: 14,
             aliases: [ "Caesar Salad", "Caesar" ],
             special: false
         }, {
             name: "Farm House Salad",
-            plate_cost: 2.59,
+            plate_cost: 2.52,
             menu_price: 18,
             aliases: [],
             special: false
         }, {
             name: "Bruschetta",
-            plate_cost: 5.1,
+            plate_cost: 5.45,
             menu_price: 20,
             aliases: [],
             special: false
         }, {
             name: "Ribollita",
-            plate_cost: 2.76,
+            plate_cost: 2.54,
             menu_price: 16,
             aliases: [],
             special: false
         }, {
             name: "Swan House Bolognese",
-            plate_cost: 5.82,
+            plate_cost: 5.13,
             menu_price: 34,
             aliases: [ "Bolognese" ],
             special: false
         }, {
             name: "Rigatoni",
-            plate_cost: 3.7,
+            plate_cost: 4.01,
             menu_price: 29,
             aliases: [ "Eggplant Rigatoni" ],
             special: false
         }, {
             name: "Stuffed Farfalle",
-            plate_cost: 3.1,
+            plate_cost: 3.18,
             menu_price: 30,
             aliases: [ "Farfalle" ],
             special: false
         }, {
             name: "Mafaldine alla Carbonara",
-            plate_cost: 4.1,
+            plate_cost: 4.22,
             menu_price: 28,
             aliases: [ "Carbonara" ],
             special: false
         }, {
             name: "Risotto",
-            plate_cost: 2.76,
+            plate_cost: 2.28,
             menu_price: 28,
             aliases: [],
             special: false
         }, {
             name: "Zuppa di Pesce",
-            plate_cost: 9.31,
+            plate_cost: 8.47,
             menu_price: 38,
             aliases: [ "Pesce al Cartoccio", "Black Cod" ],
             special: false
         }, {
             name: "Braised Short Rib",
-            plate_cost: 17.12,
+            plate_cost: 14.67,
             menu_price: 48,
             aliases: [ "Short Rib" ],
             special: false
         }, {
             name: "Classic Tiramisu",
-            plate_cost: 2.85,
+            plate_cost: 2.71,
             menu_price: 15,
             aliases: [ "Tiramisu" ],
             special: false
         }, {
             name: "Lemon Olive Oil Cake",
-            plate_cost: 2.1,
+            plate_cost: 2.41,
             menu_price: 13,
             aliases: [ "Olive Oil Cake" ],
             special: false
         }, {
             name: "Seasonal Gelato",
-            plate_cost: 1.25,
+            plate_cost: 1.47,
             menu_price: 8,
             aliases: [ "Gelato" ],
             special: false
         }, {
             name: "Farmhouse Primavera",
-            plate_cost: 3.85,
+            plate_cost: 4.33,
             menu_price: 29,
             aliases: [ "Farmhouse Primavera", "Primavera" ],
             special: true
         }, {
             name: "Salmon Collar",
-            plate_cost: 5.37,
+            plate_cost: 5.12,
             menu_price: 25,
             aliases: [ "Salmon Collar" ],
             special: true
@@ -33515,7 +33699,7 @@ if (document.readyState !== "loading") boot(); else document.addEventListener("D
         var last = DT.i === STEPS.length - 1, bar = $("tourBar");
         if (!bar) return;
         var r = roleOf();
-        bar.innerHTML = '<div class="tour-inner">' + '<div class="tour-step">Step ' + (DT.i + 1) + " of " + STEPS.length + (r ? " · as " + esc(r.who) : "") + "</div>" + '<div class="tour-title serif">' + esc(s.t) + "</div>" + '<p class="tour-body">' + esc(s.b) + "</p>" + '<div class="tour-btns">' + '<button class="tour-skip" onclick="demoTourEnd()">' + (last ? "" : "Close") + "</button>" + (DT.i > 0 ? '<button class="tour-back" onclick="demoTourBack()">Back</button>' : "") + '<button class="tour-next" onclick="demoTourNext()">' + (last ? "Done" : "Next") + "</button>" + "</div></div>";
+        bar.innerHTML = '<div class="tour-inner">' + '<div class="tour-step">Step ' + (DT.i + 1) + " of " + STEPS.length + (r ? " · as " + esc(r.who) : "") + "</div>" + '<div class="tour-title serif">' + esc(s.t) + "</div>" + '<p class="tour-body">' + esc(s.b) + "</p>" + '<div class="tour-btns">' + (last ? "" : '<button class="tour-skip" onclick="demoTourEnd()">Close</button>') + (DT.i > 0 ? '<button class="tour-back" onclick="demoTourBack()">Back</button>' : "") + '<button class="tour-next" onclick="demoTourNext()">' + (last ? "Done" : "Next") + "</button>" + "</div></div>";
         bar.classList.add("open");
         document.body.classList.add("tour-on");
         try {
